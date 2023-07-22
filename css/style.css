@@ -1,0 +1,632 @@
+:root {
+  --primary:#564D57;
+  --primary-light: #CCB9BC;
+  --primary-dark:#413A41; /*sacar */
+  
+  --pure:#ffffff; 
+  --secondary: #070606; /* cambiar */
+  --ternary:#898989;
+  --light: #f2f2ff;
+  --light2: #f7f7f5;
+  --primary-bg: #F8F7F7;
+  /*#84DCCF*/
+} /* dejar solo l oque se use */
+
+
+/* --------------------------------------------- */
+/* GENERAL STYLE */
+/* --------------------------------------------- */
+
+* {
+	padding: 0;
+	margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #716572;
+  background-color: var(--primary-bg);
+  min-height: 100vh;
+}
+ul {
+  padding:0;
+  margin: 0;
+}
+/*
+p {
+  font-weight: 300;
+  line-height: 1.9;
+  font-size: 0.875rem;
+}
+*/
+
+h2 {
+  display: block;
+  font-size: 30px;
+  font-family: 'Lato', sans-serif;
+  line-height: 2.4;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #211D21;
+}
+h3 {
+  display: block;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  line-height: 2.4;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #211D21;
+}
+h5 {
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+}
+a {
+  font-size: .875rem;
+  color: #564D57;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  transition: all .3s ease;
+}
+a:hover {
+    color: #B1DDD9; /* cambiar por var */
+  }
+
+/*--- Button ---*/
+button {
+  padding:0.8rem 2rem;
+  font-size: .8rem;
+  font-weight: 400;
+  border: 2px solid transparent;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+.btn-nav {
+  border: none;
+} /* funciona raro y aun aparece la linea cuando es preciosando */
+.btn-nav:focus {
+  box-shadow: none;
+  border: none;
+}
+.btn-brown {
+  background: #564D57;
+  color: #FCFBFB;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all .3s ease;
+}
+.btn-brown:hover {
+  background: #413A41;
+  box-shadow:none;
+}
+  /* WSP Button */
+  body .btn-wsp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 25px;
+    right: 25px;
+    background: #25d366;
+    color: #FFF;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 35px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    transition: all 300ms ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+  body .btn-wsp:hover {
+    background: white;
+    color: #25d366;
+  }
+  @media only screen and (min-width: 320px) and (max-width: 768px) {
+    body .btn-wsp {
+      width: 63px;
+      height: 63px;
+      line-height: 66px;
+    }
+  }
+
+
+@media (max-width: 767.98px) {
+  .hide {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) {
+  .hide-redes {
+    display: none;
+  }
+}
+
+
+/* -- Header-Contact ---------------------- */
+  .header-contact {
+    background: #F8F7F7;
+    font-size: 0.850rem;
+    border-bottom: solid 1px var(--primary-light);
+  }
+  .header-contact li{
+    list-style: none;
+  }
+  .header-contact i{
+    font-size: 16px;
+  }
+  .header-contact a:hover {
+    color: #B1DDD9; /* cambiar por var */
+  }
+
+
+/* --------------------------------------------- */
+/* MAIN NAV */
+/* --------------------------------------------- */
+
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+nav li{
+  list-style: none;
+  padding-right: 30px;
+}
+nav li:nth-child(4){
+  padding-right:0;
+}
+.nav-justify {
+    justify-content: flex-end;
+  }
+
+@media (max-width: 767.9px) {
+  /*------------ alineado horizontar centrado ----------------*/
+  nav {
+    /*background-color: var(--primary-bg);*/ 
+    /*border-bottom: solid 1px var(--primary-light);*/
+  }
+  nav a {
+    font-size: 1rem;
+  }
+  nav li{
+  padding: 20px 0;
+  }
+  .nav-justify {
+    justify-content: center;
+  }
+}
+
+
+/* --------------------------------------------- */
+/* HERO    
+/* --------------------------------------------- */
+
+#hero {
+  background-color: #F5D099;
+	height: 100vh; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.bg-hero {
+  background-image: url("../images/persona-brazos-abiertos-sepia.jpg"); /*  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))  */
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+/* --------------------------------------------- */
+/* ABOUT ME    
+/* --------------------------------------------- */
+
+.about_me_container {
+  min-height: 1000px;
+}
+.about_me_border {
+  border: 3px solid #564D57;
+}
+
+@media (max-width: 767.9px) {
+  .about_me_border {
+  border: none;
+  }
+  
+}
+
+
+
+/*
+.bg-sobre-mi .card {
+  background-color: #F8F7F7 !important;
+  border: none;
+  line-height: 1.5;
+}
+.bg-sobre-mi .card .card-body {
+  min-height: 495px;
+  padding: 5em 3em;
+}
+.bg-sobre-mi .card .card-body .saludo-italic {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 500;
+}
+.bg-sobre-mi .card .card-body .about-me-text {
+  margin-bottom: 10px;
+}
+.bg-sobre-mi .card .card-body .btn-about-me {
+  margin-top: 10px;
+}
+*/
+
+@media (min-width: 1200px) {
+  .bg-sobre-mi .card .responsive-1200 div.col-xl-5 {
+    margin: auto;
+  }
+  .bg-sobre-mi .card .responsive-1200 div.col-xl-5 .card-body {
+    padding: 2em 3em;
+  }
+}
+@media (max-width: 1200px) {
+  .pb-5.bg-sobre-mi {
+    padding-bottom: 0 !important;
+  }
+  .pb-5.bg-sobre-mi .card .responsive-1200 div.col-xl-5 {
+    margin: auto;
+  }
+  .pb-5.bg-sobre-mi .card .responsive-1200 div.col-xl-5 .card-body {
+    padding: 6em 7em;
+  }
+  .pb-5.bg-sobre-mi .card .responsive-1200 div.col-xl-5 .card-body h2 {
+    display: none;
+  }
+}
+
+
+/* --------------------------------------------- */
+/* SERVICIOS    
+/* --------------------------------------------- */
+
+#servicios {
+
+}
+
+.service_title {
+  border-bottom: 1px solid #564D57;
+  border-top: 1px solid #564D57;
+  padding: 40px 0;
+}
+
+.marquee {
+  display: flex;
+  overflow: hidden;
+  gap: 1rem;
+  position: relative;
+  user-select: none;
+  border-bottom: 1px solid #564D57;
+}
+  
+.marquee_content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: 1rem;
+} 
+
+
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 1rem));
+  }
+}
+
+
+.scroll {
+  animation: scroll 40s linear infinite;
+}
+
+
+
+.marquee2 {
+  height: 25px;
+  width: 100%;
+
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee2 div {
+  display: block;
+  width: 200%;
+  height: 30px;
+
+  position: absolute;
+  overflow: hidden;
+
+  animation: marquee 10s linear infinite;
+}
+
+.marquee2 span {
+  float: left;
+width: 5%;
+}
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+  
+  
+  
+  
+  
+  /*
+  padding: 16px 0;
+   */
+/*  animación como: https://thoroughfaredesign.com/ */
+ /*
+.marquee_content {
+  display: flex;
+  list-style: none;
+  animation: scrolling 10s linear infitine;
+  
+  
+  justify-content: space-between;
+  white-space: nowrap;
+  animation: marquee 30s linear infitine; */
+} /* https://arianarubi.medium.com/c%C3%B3mo-hacer-una-animaci%C3%B3n-marquee-infinita-con-html-y-css-e4f1d1cd3652 */
+
+
+
+
+
+section .border-top-bottom-right {
+  border-bottom: 1px solid #564D57;
+  /* padding: 60px 0; */
+}
+section .border-top-bottom-right div {
+  border: none;
+  background-color: transparent;
+}
+section .border-top-bottom-right .border-right {
+  border-right: 1px solid #564D57;
+  padding: 40px 160px;
+}
+
+/*
+section .border-top-bottom-right .border-right:nth-child(3) {
+  border-right: none;
+}
+
+section .border-top-bottom-right div {
+  width: 100px;
+ margin: auto;
+}
+section .border-top-bottom-right div .card-body div img {
+  width: 100px;
+}
+section .border-top-bottom-right div div h5.h5-bold {
+  font-family: "Roboto";
+  font-weight: 500;
+}
+section .max-width-section-lista {
+  max-width: 850px;
+}
+section .max-width-section-lista div ul .list-style {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+@media (max-width: 991.98px) {
+  section .border-top-bottom-right {
+    padding: 0;
+  }
+  section .border-top-bottom-right .border-right {
+    border-bottom: 1px solid var(--primary-light);
+    border-right: none;
+    padding: 60px 0;
+  }
+  section .border-top-bottom-right .border-right:nth-child(3) {
+  border-bottom: none;
+  }
+  section .card-group.responsive-card {
+    flex-direction: column;
+  }
+  section .lista-responsive {
+    flex-direction: column;
+  }
+  section .max-width-section-lista {
+    max-width: 350px;
+  }
+}
+*/
+
+/* --------------------------------------------- */
+/* FRASE HORIZONTE    
+/* --------------------------------------------- */
+
+.frase-horizonte {
+  /* The image used */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/atardecer-porto-palafitico-da-carrasqueira.jpg"); /* Filtro para oscurecer un poco la imagen y la tipo sin "cuadrado" clarita */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.frase-horizonte-text {
+  
+  color:white;
+}
+.frase-horizonte-destacado {
+  /*background-color: #B1DDD9;*/
+}
+
+
+/* --------------------------------------------- */
+/* PRIMERA SESIÓN GRATUITA    
+/* --------------------------------------------- */
+
+.sesion-gratuita {
+  background-color: #B1DDD9; 
+}
+section .padding-sesion-gratuita {
+  padding: 60px;
+}
+
+
+/* --------------------------------------------- */
+/* CONTACTO    
+/* --------------------------------------------- */
+
+section h5.h5-form {
+  margin-bottom: 35px !important;
+}
+section .container-form {
+  justify-content: center;
+  max-width: 1000px;
+  margin: auto;
+}
+section .container-form .redes-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  border-right: 1px solid var(--primary-light);
+  padding-right: 50px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+section .container-form .redes-form div {
+  height: 150px;
+}
+section .container-form .redes-form div i.height {
+  line-height: 2.6;
+  font-size: 35px;
+}
+section .container-form .redes-form div p.subtitulo-form {
+  color: #38C5CE;
+  font-size: 20px;
+  line-height: 0.2;
+}
+section .container-form .redes-form div p.text-secundario {
+  line-height: 1.2;
+}
+section .container-form .formulario {
+  margin-left: 50px;
+  padding-top: 15px;
+}
+section .container-form .formulario div .form-control {
+  background-color: #F8F7F7;
+  border: none;
+  border-bottom: 1px solid var(--primary-light);
+  border-radius: 0;
+}
+
+/* tablets, less than 992px*/
+@media (max-width: 991.98px) {
+  section .container-form {
+    flex-direction: column;
+  }
+  section .container-form .redes-form {
+    flex-direction: row;
+    justify-content: center;
+    border-right: 0;
+    border-bottom: 1px solid var(--primary-light);
+    width: 100%;
+    padding-right: 0;
+    padding-bottom: 70px;
+  }
+  section .container-form .redes-form div.left {
+    margin-left: 0;
+    width: 191px;
+  }
+  section .container-form .redes-form div.left p.subtitulo-form {
+    line-height: 1.2;
+    margin-bottom: 6px;
+  }
+  section .container-form .redes-form div {
+    margin-left: 2em;
+    width: 191px;
+  }
+  section .container-form .redes-form div p.subtitulo-form {
+    line-height: 1.2;
+    margin-bottom: 6px;
+  }
+  section .container-form .formulario {
+    margin-left: 0;
+  }
+}
+@media (max-width: 650px) {
+  section .container-form .redes-form {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 70px;
+  }
+  section .container-form .redes-form div.left {
+    margin-left: 2em;
+    min-width: 191px;
+  }
+  section .container-form .redes-form div {
+    min-width: 191px;
+  }
+}
+
+/* --------------------------------------------- */
+/* FOOTER */
+/* --------------------------------------------- */
+footer {
+  width: 100%;
+  height: 150px;
+  padding: 0 20px 20px 0;
+  color: white;
+  background-color: #413A41;
+  margin-top:60px;
+}
+footer .footer-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem;
+  transition: all 0.3s ease;
+  font-size: 1.5rem;
+  color: #898989;
+}
+footer .footer-social a:nth-of-type(4) {
+  margin-right: 0;
+}
+footer .footer-social a:hover {
+  color:#ffffff;
+}
+footer .copyright{
+  color:var(--ternary);
+  font-size: 0.9rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+
+/*# sourceMappingURL=style.css.map */
