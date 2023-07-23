@@ -361,10 +361,11 @@ section .border-top-bottom-right .border-right {
 
 @media (max-width: 991.9px) {
   section .border-top-bottom-right .border-right {
-  border-right: 1px solid #564D57;
-  padding: 40px;
+  padding:0 20px 40px 20px;
+  border-right:none;
+  border-bottom: 1px solid #564D57;
   } 
-}
+} /* Dispositivos móviles */
 
 
 
