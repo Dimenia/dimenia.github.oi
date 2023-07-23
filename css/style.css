@@ -359,7 +359,7 @@ section .border-top-bottom-right .border-right {
 
 
 
-@media (max-width: 767.9px) {
+@media (max-width: 991.9px) {
   section .border-top-bottom-right .border-right {
   border-right: 1px solid #564D57;
   padding: 40px;
