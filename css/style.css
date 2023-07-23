@@ -37,13 +37,6 @@ ul {
   padding:0;
   margin: 0;
 }
-/*
-p {
-  font-weight: 300;
-  line-height: 1.9;
-  font-size: 0.875rem;
-}
-*/
 
 h2 {
   display: block;
@@ -245,8 +238,7 @@ nav li:nth-child(4){
 @media (max-width: 767.9px) {
   .about_me_border {
   border: none;
-  }
-  
+  } 
 }
 
 
@@ -346,59 +338,11 @@ nav li:nth-child(4){
 }
 
 
-
-.marquee2 {
-  height: 25px;
-  width: 100%;
-
-  overflow: hidden;
-  position: relative;
-}
-
-.marquee2 div {
-  display: block;
-  width: 200%;
-  height: 30px;
-
-  position: absolute;
-  overflow: hidden;
-
-  animation: marquee 10s linear infinite;
-}
-
-.marquee2 span {
-  float: left;
-width: 5%;
-}
-
 @keyframes marquee {
   0% { left: 0; }
   100% { left: -100%; }
 }
   
-  
-  
-  
-  
-  /*
-  padding: 16px 0;
-   */
-/*  animación como: https://thoroughfaredesign.com/ */
- /*
-.marquee_content {
-  display: flex;
-  list-style: none;
-  animation: scrolling 10s linear infitine;
-  
-  
-  justify-content: space-between;
-  white-space: nowrap;
-  animation: marquee 30s linear infitine; */
-} /* https://arianarubi.medium.com/c%C3%B3mo-hacer-una-animaci%C3%B3n-marquee-infinita-con-html-y-css-e4f1d1cd3652 */
-
-
-
-
 
 section .border-top-bottom-right {
   border-bottom: 1px solid #564D57;
@@ -413,7 +357,22 @@ section .border-top-bottom-right .border-right {
   padding: 40px 160px;
 }
 
+
+
+@media (max-width: 767.9px) {
+  section .border-top-bottom-right .border-right {
+  border-right: 1px solid #564D57;
+  padding: 40px;
+  } 
+}
+
+
+
+
+
 /*
+
+
 section .border-top-bottom-right .border-right:nth-child(3) {
   border-right: none;
 }
