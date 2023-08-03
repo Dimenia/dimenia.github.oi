@@ -132,7 +132,6 @@ button {
     }
   }
 
-
 @media (max-width: 767.98px) {
   .hide {
     display: none !important;
@@ -213,6 +212,13 @@ nav li:nth-child(4){
 	justify-content: center;
 	align-items: center;
 }
+#hero h2, h3 {
+  color: white;
+}
+#hero h3 {
+  margin-left: 10px;
+}
+
 .bg-hero {
   background-image: url("../images/persona-brazos-abiertos-sepia.jpg"); /*  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))  */
   height: 100%; 
@@ -221,6 +227,7 @@ nav li:nth-child(4){
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 
 
 
@@ -235,36 +242,14 @@ nav li:nth-child(4){
   border: 3px solid #564D57;
 }
 
-@media (max-width: 767.9px) {
+@media (max-width: 991.9px) {
   .about_me_border {
   border: none;
-  } 
+  }
+  #sobremi button {
+    width: 100%;
+  }
 }
-
-
-
-/*
-.bg-sobre-mi .card {
-  background-color: #F8F7F7 !important;
-  border: none;
-  line-height: 1.5;
-}
-.bg-sobre-mi .card .card-body {
-  min-height: 495px;
-  padding: 5em 3em;
-}
-.bg-sobre-mi .card .card-body .saludo-italic {
-  font-family: "Roboto";
-  font-style: italic;
-  font-weight: 500;
-}
-.bg-sobre-mi .card .card-body .about-me-text {
-  margin-bottom: 10px;
-}
-.bg-sobre-mi .card .card-body .btn-about-me {
-  margin-top: 10px;
-}
-*/
 
 @media (min-width: 1200px) {
   .bg-sobre-mi .card .responsive-1200 div.col-xl-5 {
@@ -294,9 +279,6 @@ nav li:nth-child(4){
 /* SERVICIOS    
 /* --------------------------------------------- */
 
-#servicios {
-
-}
 
 .service_title {
   border-bottom: 1px solid #564D57;
@@ -369,75 +351,19 @@ section .border-top-bottom-right .border-right {
 
 
 
-
-
-/*
-
-
-section .border-top-bottom-right .border-right:nth-child(3) {
-  border-right: none;
-}
-
-section .border-top-bottom-right div {
-  width: 100px;
- margin: auto;
-}
-section .border-top-bottom-right div .card-body div img {
-  width: 100px;
-}
-section .border-top-bottom-right div div h5.h5-bold {
-  font-family: "Roboto";
-  font-weight: 500;
-}
-section .max-width-section-lista {
-  max-width: 850px;
-}
-section .max-width-section-lista div ul .list-style {
-  margin-top: 3px;
-  margin-bottom: 3px;
-}
-
-@media (max-width: 991.98px) {
-  section .border-top-bottom-right {
-    padding: 0;
-  }
-  section .border-top-bottom-right .border-right {
-    border-bottom: 1px solid var(--primary-light);
-    border-right: none;
-    padding: 60px 0;
-  }
-  section .border-top-bottom-right .border-right:nth-child(3) {
-  border-bottom: none;
-  }
-  section .card-group.responsive-card {
-    flex-direction: column;
-  }
-  section .lista-responsive {
-    flex-direction: column;
-  }
-  section .max-width-section-lista {
-    max-width: 350px;
-  }
-}
-*/
-
 /* --------------------------------------------- */
 /* FRASE HORIZONTE    
 /* --------------------------------------------- */
 
 .frase-horizonte {
-  /* The image used */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/atardecer-porto-palafitico-da-carrasqueira.jpg"); /* Filtro para oscurecer un poco la imagen y la tipo sin "cuadrado" clarita */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/atardecer-porto-palafitico-da-carrasqueira.jpg");
   min-height: 500px;
-
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .frase-horizonte-text {
-  
   color:white;
 }
 .frase-horizonte-destacado {
